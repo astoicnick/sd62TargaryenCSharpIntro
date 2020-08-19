@@ -14,8 +14,8 @@ namespace _1___Variables
         {
             // Declared, not assigned a value
             bool isDeclared;
-        // Assign it a value, based on type
-        isDeclared = true;
+            // Assign it a value, based on type
+            isDeclared = true;
 
             //-- Characters (char)
             // To define a single character, make sure to use single quotes ('')

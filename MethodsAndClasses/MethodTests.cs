@@ -8,7 +8,6 @@ namespace MethodsAndClasses
     public class MethodTests
     {
         // Modulus %
-
         [TestMethod]
         public void CalculatorTest()
         {
@@ -23,21 +22,33 @@ namespace MethodsAndClasses
             // BONUS: Create a method that finds the remainder of two numbers
             // BONUS: Create overloads that accept int, float, double, decimal for parameters
 
-            Console.WriteLine(AddTwoNumbersAndReturnSum(1.5d, 1.5d));
+            int sum = AddTwoNumbers(1, 2);
+            int difference = SubtractTwoNumbers(5, 3);
+            int product = MultiplyTwoNumbers(2, 5);
+            int quotient = DivideTwoNumbers(10, 2);
 
+            Console.WriteLine(sum);
+            Console.WriteLine(difference);
+            Console.WriteLine(DivideTwoNumbers(6, 3));
+            Console.WriteLine(MultiplyTwoNumbers(5, 2));
         }
         // access-modifier return-type name/signature (params)
-        private int AddTwoNumbersAndReturnSum(int num1, int num2)
+        private int AddTwoNumbers(int num1, int num2)
         {
-            return num1 + num2;
+            int sum = num1 + num2;
+            return sum;
         }
-        private double AddTwoNumbersAndReturnSum(double num1, double num2)
+        private int SubtractTwoNumbers(int num1, int num2)
         {
-            return num1 + num2;
+            return num1 - num2;
         }
-        private decimal AddTwoNumbersAndReturnSum(decimal num1, decimal num2)
+        private int MultiplyTwoNumbers(int num1, int num2)
         {
-            return num1 + num2;
+            return num1 * num2;
+        }
+        private int DivideTwoNumbers(int num1, int num2)
+        {
+            return num1 / num2;
         }
     }
 }
