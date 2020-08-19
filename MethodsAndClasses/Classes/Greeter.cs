@@ -13,7 +13,11 @@ namespace MethodsAndClasses.Classes
             Name = name;
         }
         public string Name { get; set; }
-        public void GreetPerson()
+        public void Greet()
+        {
+            SayHelloUsingName();
+        }
+        private void SayHelloUsingName()
         {
             Console.WriteLine("Hello there, " + Name);
         }

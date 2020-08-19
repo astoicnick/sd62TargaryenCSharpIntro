@@ -10,9 +10,13 @@ namespace MethodsAndClasses
         [TestMethod]
         public void Classes_Intro()
         {
-            // type name = value
+            // Create a class that does one basic thing
+            // Adds numbers, Console.WriteLines something
+            // Create an instance of the class (in your test class)
+            // Run the method you created from the new instance
+
             Greeter greeter = new Greeter("Nick Perry");
-            greeter.GreetPerson();
+            greeter.Greet();
         }
     }
 }
